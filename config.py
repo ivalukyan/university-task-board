@@ -5,7 +5,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
+
 NOTION_TOKEN = os.getenv('NOTION_TOKEN')
+NOTION_TOKEN_ME = os.getenv('NOTION_TOKEN_ME')
 
 DATABASE_NAME = os.getenv('DATABASE_NAME')
 DATABASE_HOST = os.getenv('DATABASE_HOST')
