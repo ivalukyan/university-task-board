@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from fastapi import Form
 
 
 class User(BaseModel):
@@ -7,3 +8,9 @@ class User(BaseModel):
     password: str
     staff_status: bool
     subscription_status: bool
+
+
+class Mailing(BaseModel):
+    user_id: int
+    message: str
+
